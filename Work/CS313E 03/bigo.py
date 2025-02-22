@@ -62,9 +62,8 @@ def length_of_longest_substring_n2(s):
         for _, other_ch in enumerate(rest_of_string):
             if other_ch in existing:
                 break
-            else:
-                existing[other_ch] = True # to track seen character
-                max_len = max(max_len, len(existing)) # dictionary length is substring length
+            existing[other_ch] = True # to track seen character
+            max_len = max(max_len, len(existing)) # dictionary length is substring length
 
     return max_len
 
